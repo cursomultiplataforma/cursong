@@ -1,0 +1,33 @@
+<p>primercomponente works!</p>
+<P>hOLA !!!</P>
+
+<p>Esto es un numero: {{variable}}</p>
+<p>Esto es una cadena: {{variableCadena}}</p>
+<p>Esto es un array: {{variableArray}}</p>
+<p>Esto es la tupla: {{variableTupla}}</p>
+<p>Esto es la tupla: {{variableCualquierDato}}</p>
+Interfaz
+<p>Mostramos una pesona: {{variablePersona.nombre}}</p>
+<p>Mostramos una pesona apellido: {{variablePersona.apellidos}}</p>
+<p>Mostramos una pesona edad: {{variablePersona.edad}}</p>
+
+Clase
+<p>Mostramos una pesona: {{variableCPersona.nombre}}
+    apellidos {{variableCPersona.apellidos}}
+  tiene {{variableCPersona.edad}}
+</p>
+
+LLamamos a la funcion
+<p>Mi nombre a través de una funcion: {{verNombre()}}</p>
+<input value="{{variableCPersona.nombre}}"
+       (change)="cambiarNombre($event.target.value)"
+>
+
+<hr>
+Directiva ngModel 1 direccion
+<input [ngModel]="variableCPersona.nombre"><br>
+Directiva ngModel 2 direcciones
+<input [(ngModel)]="variableCPersona.nombre">
+
+
+
